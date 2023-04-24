@@ -87,7 +87,7 @@ while running:
             player_x += player_speed
 
         if not is_jump:
-            if keys[pygame.K_SPACE]:
+            if keys[pygame.K_SPACE] or pygame.mouse.get_pressed()[0]:
                 is_jump = True
         else:
             if jump_count >= -8:
