@@ -30,7 +30,7 @@ moai_list_in_game = []
 player_anim_count = 0
 bg_x = 0
 
-player_speed = 5
+player_speed = 7
 player_x = 150
 player_y = 250
 
