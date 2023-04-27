@@ -35,7 +35,7 @@ player_x = 150
 player_y = 250
 
 is_jump = False
-jump_count = 8
+jump_count = 10
 gameplay = True
 bg_sound = pygame.mixer.Sound('Sounds/bg.mp3')
 bg_sound.play()
@@ -90,7 +90,7 @@ while running:
             if keys[pygame.K_SPACE] or pygame.mouse.get_pressed()[0]:
                 is_jump = True
         else:
-            if jump_count >= -8:
+            if jump_count >= -10:
                 if jump_count > 0:
                     player_y -= (jump_count**2) / 2
                 else:
@@ -98,7 +98,7 @@ while running:
                 jump_count -= 1
             else:
                 is_jump = False
-                jump_count = 8
+                jump_count = 10
 
 
 
